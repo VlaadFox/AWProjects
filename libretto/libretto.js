@@ -55,10 +55,11 @@ function ExamList() {
     // non ho scritto il filterFunctional
 
     this.increaseVote = () => {
-        return this.list.map(x => {
-            const new_x = Object.assign({}, x, { voto: x.voto + 1 })
-            return new_x;
-        }); // ad ogni elemento dell'array aumento di 1, x è l'esame
+        return this.list.map(
+            x => {
+                const new_x = Object.assign({}, x, { voto: x.voto + 1 })
+                return new_x;
+            }); // ad ogni elemento dell'array aumento di 1, x è l'esame
     }
 }
 
